@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#3f161a">
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkedTextView"
+        android:layout_marginTop="23dp"
+        android:text="Welcome India Runner"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff281e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/checkedTextView"
+        android:layout_alignLeft="@+id/checkedTextView" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:text="General Info"
+        android:id="@+id/button"
+        android:background="#66ff6c"
+        android:onClick="@string/onGeneral"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button2" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:id="@+id/button2"
+        android:text="Rides"
+        android:background="#f9ff3e"
+        android:onClick="@string/ShowRides"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="37dp" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:text="Training Log"
+        android:id="@+id/button3"
+        android:background="#ff9a0d"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button4" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:text="Notifications"
+        android:id="@+id/button4"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:background="#6afff3" />
+
+
+</RelativeLayout>

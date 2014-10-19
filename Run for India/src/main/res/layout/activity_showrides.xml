@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@android:color/background_light">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablelay"
+        android:showDividers="beginning|middle|end" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:showDividers="beginning|middle|end" >
+            <TextView
+                android:text="Name"
+                android:padding="20dip"
+                android:focusableInTouchMode="false"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Address"
+                android:gravity="right"
+                android:padding="20dip"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Email"
+                android:gravity="right"
+                android:padding="20dip"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Phone"
+                android:gravity="right"
+                android:padding="20dip"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Need"
+                android:gravity="right"
+                android:padding="20dip"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PullData"
+        android:id="@+id/button"
+        android:onClick="@string/onSumbitShowRide"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

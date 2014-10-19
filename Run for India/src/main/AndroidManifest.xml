@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.runforindia" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.runforindia.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.runforindia.confreg"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.showMainForm"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.general"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="com.example.runforindia.Exercise"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.Nutrition"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.Routes"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.Projects"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.rides"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.signup"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.runforindia.showRides"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
